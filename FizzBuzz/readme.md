@@ -1,18 +1,23 @@
-## FizzBuzz 程序说明
+## FizzBuzz Program Description
 
-**FizzBuzz** 是一个经典的编程练习，主要考察循环、条件判断和格式化输出。程序的目标是对整数 1 到 100 进行遍历，并根据以下规则输出对应结果：
+**FizzBuzz** is a classic programming exercise that primarily tests skills in loops, conditional statements, and formatted output. The program's objective is to iterate through integers from 1 to 100 and output corresponding results based on the following rules:
 
-### 输出规则
+### Output Rules
 
-- 如果数字能被 3 整除，输出 `Fizz`
-- 如果数字能被 5 整除，输出 `Buzz`
-- 如果数字同时能被 3 和 5 整除，输出 `FizzBuzz`
-- 否则输出数字本身
+- If a number is divisible by 3, output `Fizz`
+- If a number is divisible by 5, output `Buzz`
+- If a number is divisible by both 3 and 5, output `FizzBuzz`
+- Otherwise, output the number itself
 
-### 实现要求
+### Implementation Requirements
 
-- 使用 Go 语言实现
-- 使用 `for` 循环遍历 1 到 100
-- 使用 `if/else` 或 `switch` 语句判断倍数关系
-- 使用 `fmt.Printf` 或 `fmt.Println` 格式化输出结果
-- 代码结构清晰，注释简明，具备良好的可读性
+- Implement in Go language
+- Use a `for` loop to iterate from 1 to 100
+- Use `if/else` or `switch` statements to check divisibility
+- Format output using `fmt.Printf` or `fmt.Println`
+- Code should have clear structure, concise comments, and good readability
+
+#### Summary
+- else if need to be written after } in the same line, this is because of the Go language syntax.
+- Go's Automatic Semicolon Insertion Rules, In Go, semicolons are automatically inserted by the lexer following these specific rules from the Go Language Specification. Like the ASI in JavaScript, Go has its own rules for semicolon insertion, which are important to understand for writing correct code.
+- For simple go file, if use `go run main.go` to execute the program, its package must be `main` and have a main function because go interpret these as the entrance.
